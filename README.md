@@ -19,6 +19,8 @@
   - https://vuejs.org/guide/components/registration.html#global-registration
 - Cycle de vie
   - https://vuejs.org/api/options-lifecycle.html
+- Composant : les props
+  - https://vuejs.org/guide/components/props.html
 
 ## Sujet du TP
 
@@ -30,6 +32,10 @@
 6) Afficher un message d'erreur si l'un des 2 champs n'est pas correct
 7) Une fois la news créée, la faire remonter au composant parent via un l'event add-news qui ajoutera la news dans un tableau allNews accessible par la vue
 8) Afficher le contenu présent dans la variable allNews
+9) Créer un composant article, qui affichera un titre et une description qui seront reçu depuis les props.
+10) Utiliser ce composant depuis le fichier `index.html`. Les éléments affichés par le composant seront passés par la vue.
+11) Rajouter un évènement au clic sur le titre d'un article qui fera changera la valeur de l'attribut `isRead` à `true`.
+12) Si un article a son attribut `isRead` à true alors il faut afficher la mention *(lu)* à droite de l'article.
 
 ## Ressources
 
