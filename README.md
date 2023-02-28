@@ -34,8 +34,8 @@
 8) Afficher le contenu présent dans la variable allNews
 9) Créer un composant article, qui affichera un titre et une description qui seront reçu depuis les props.
 10) Utiliser ce composant depuis le fichier `index.html`. Les éléments affichés par le composant seront passés par la vue.
-11) Rajouter un évènement au clic sur le titre d'un article qui fera changera la valeur de l'attribut `isRead` à `true`.
-12) Si un article a son attribut `isRead` à true alors il faut afficher la mention *(lu)* à droite de l'article.
+11) Rajouter un évènement au clic sur le titre d'un article qui inversera la valeur de l'attribut `isRead`.
+12) Si un article a son attribut `isRead` à true alors il faut afficher la mention *(lu)* à droite du titre de l'article.
 
 ## Ressources
 
