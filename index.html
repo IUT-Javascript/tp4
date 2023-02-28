@@ -14,9 +14,10 @@
         <!-- On déclare un événement via @nomEvent -->
         <form-add-article @add-news="addNews"></form-add-article>
 
-        <div v-for="news in allNews">
-            {{ news.title }}
-        </div>
+        <awesome-article v-for="news in allNews"
+                         :title="news.title" 
+                         :description="news.description">
+        </awesome-article>
     </div>
 
     <script src="/src/misc/constant.js"></script>
@@ -26,6 +27,7 @@
         import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js';
 
         import FormAddArticle from '/src/view/form-add-article.js';
+        import AwesomeArticle from '/src/view/awesome-article.js';
       
         const app = createApp({
             //La méthode created() est appelée à la création de l'application
@@ -49,7 +51,8 @@
 
         //la méthode component(nomComposantHtml, nomComposantImporte) permet de déclarer un composant utilisable en tant que balise HTML <nom-composant></nom-composant>
         //Le nom du composant côté JS doit respecté le Pascal case, alors que son utilisation dans le code HTML respecte le kebab case
-        app.component('FormAddArticle', FormAddArticle);
+        app.component('FormAddArticle', FormAddArticle)
+           .component('AwesomeArticle', AwesomeArticle);
 
         app.mount('#app');
       </script>
