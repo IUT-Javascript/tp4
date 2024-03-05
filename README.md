@@ -8,7 +8,7 @@
   - https://vuejs.org/guide/essentials/template-syntax.html#text-interpolation
 - Affichage itératif
   - https://vuejs.org/guide/essentials/list.html#v-for
-- Binding classe/style
+- Binding classe/stylet
   - https://vuejs.org/guide/essentials/class-and-style.html#binding-html-classes
 - Events
   - https://vuejs.org/guide/essentials/event-handling.html

@@ -19,7 +19,7 @@ export default {
             console.log('form.addNews', news);
 
             //permet de faire remonter un event au composant parent
-            //l'event sera écouté à l'appel du composant enfant via @change-state="function"
+            //l'event sera écouté à l'appel du composant enfant via @add-news="function"
             this.$emit('addNews', news);
 
             this.title = '';

@@ -10,7 +10,7 @@ export default {
     },
     methods: {
         readArticle: function() {
-            this.isRead = !this.isRead;
+            this.isRead = !this.isRead; //ceci permet d'inverser un bool
         }
     },
     //:title="title" => : pour v-bind:, title est un attribut HTMl, "title" correspond à la prop
