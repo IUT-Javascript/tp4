@@ -11,7 +11,7 @@
         <!-- la synthaxe {{ variable }} permet d'afficher le contenu de la variable -->
         <h1>{{ title }}</h1>
 
-        <!-- On déclare un événement via @nomEvent -->
+        <!-- On déclare un événement via @nomEvent qui sera émit par this.$emit('npom-event', data) -->
         <form-add-article @add-news="addNews"></form-add-article>
 
         <awesome-article v-for="news in allNews"
@@ -24,7 +24,7 @@
 
     <!-- Afin de pouvoir importer Vue via la commande import, il est nécessaire de déclarer notre JS comme un module -->
     <script type="module">
-        import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js';
+        import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'; //intégration de vuejs via CDN
 
         import FormAddArticle from '/src/view/form-add-article.js';
         import AwesomeArticle from '/src/view/awesome-article.js';

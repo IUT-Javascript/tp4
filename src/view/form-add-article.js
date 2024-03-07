@@ -14,7 +14,7 @@ export default {
                 this.errorMessage = 'Title and description are required !';
                 return;
             }
-
+            
             const news = { title: this.title, description: this.description };
             console.log('form.addNews', news);
 
